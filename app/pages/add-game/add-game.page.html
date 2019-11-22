@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color ="primary">
+    <ion-title>Add Game</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<hr>
+<div>Here you can add a new game in your Playlist</div>
+
+
+<ion-item>
+  <ion-label position="floating" >Game Name</ion-label>
+  <ion-input [(ngModel)]="gameName" ></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating" >Developer</ion-label>
+  <ion-input [(ngModel)]="gamedev" ></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-button> Add this game!</ion-button>
+</ion-item>
+
+
+<ion-footer>
+  <img src="https://www.naomihouse.org.uk/index.php/download_file/view_inline/3017">
+</ion-footer>
+</ion-content>
+

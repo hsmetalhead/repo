@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color ="primary">
+    <ion-title>
+      What Game Next?
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    The world is your Cloyster.
+    <hr>
+    <ion-img width="40" height="40" src="https://img.pokemondb.net/artwork/large/cloyster.jpg"></ion-img>
+    </div>
+
+<ion-button (click) = "getData()" [routerLink]="['/', 'games']" > Show My List</ion-button>
+<hr>
+<ion-button [routerLink]="['/', 'add-game']" > Add Game </ion-button>
+<hr>
+<ion-button > Finished Game </ion-button>
+<hr>
+<!-- <div *ngIf="datalength" >The length of the data is {{datalength}}</div> -->
+</ion-content>

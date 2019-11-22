@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar color = "primary" >
+    <ion-title >Games' List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-item>
+  <h1>Games In Your Playlist</h1>
+</ion-item>
+<ion-item></ion-item>
+<ion-item  button *ngFor=" let game of games" (click) = "presentAlert(game.gameName, game.developer)"><ion-icon name="logo-game-controller-a"></ion-icon>  {{game.gameName}}</ion-item>
+
+</ion-content>
